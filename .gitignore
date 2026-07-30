@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+*.db
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Env
+.env
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model checkpoints (keep saved/*.pkl and metrics, ignore heavy transformer checkpoints)
+models/saved/*/checkpoints/

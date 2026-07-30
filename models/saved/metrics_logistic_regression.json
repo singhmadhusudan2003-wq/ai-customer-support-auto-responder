@@ -1,0 +1,188 @@
+{
+  "intent": {
+    "model": "LogisticRegression",
+    "target": "intent",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": [
+      [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        318,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        813,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        894,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        32
+      ]
+    ],
+    "labels": [
+      "Account Issue",
+      "Complaint",
+      "General Inquiry",
+      "Order Status",
+      "Refund",
+      "Technical Issue"
+    ],
+    "classification_report": {
+      "Account Issue": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 7.0
+      },
+      "Complaint": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 318.0
+      },
+      "General Inquiry": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 36.0
+      },
+      "Order Status": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 813.0
+      },
+      "Refund": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 894.0
+      },
+      "Technical Issue": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 32.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2100.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2100.0
+      }
+    },
+    "train_time_seconds": 0.1012728214263916,
+    "n_train": 8400,
+    "n_test": 2100
+  },
+  "sentiment": {
+    "model": "LogisticRegression",
+    "target": "sentiment",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": [
+      [
+        722,
+        0,
+        0
+      ],
+      [
+        0,
+        688,
+        0
+      ],
+      [
+        0,
+        0,
+        690
+      ]
+    ],
+    "labels": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ],
+    "classification_report": {
+      "Negative": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 722.0
+      },
+      "Neutral": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 688.0
+      },
+      "Positive": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 690.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2100.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2100.0
+      }
+    },
+    "train_time_seconds": 0.038036346435546875,
+    "n_train": 8400,
+    "n_test": 2100
+  }
+}

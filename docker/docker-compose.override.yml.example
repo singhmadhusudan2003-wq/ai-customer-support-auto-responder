@@ -1,0 +1,22 @@
+# Example docker-compose override for local development with hot-reload.
+# Copy to project root as `docker-compose.override.yml` to enable:
+#   cp docker/docker-compose.override.yml.example docker-compose.override.yml
+#   docker-compose up
+
+version: "3.9"
+
+services:
+  backend:
+    volumes:
+      - ./backend:/app/backend
+      - ./dataset:/app/dataset
+      - ./models:/app/models
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./frontend/src:/app/src
+    command: npm run dev
