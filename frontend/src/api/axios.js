@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
- baseURL: "https://ai-customer-support-auto-responder.onrender.com",
+baseURL: "https://ai-customer-support-auto-responder.onrender.com/api"
   headers: { "Content-Type": "application/json" },
 });
 
