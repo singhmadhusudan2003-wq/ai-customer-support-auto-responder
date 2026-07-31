@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const api = axios.create({
-baseURL: "https://ai-customer-support-auto-responder.onrender.com/api"
-  headers: { "Content-Type": "application/json" },
+const api = axios.create({  
+baseURL: "https://ai-customer-support-auto-responder.onrender.com/api",
+ headers: { "Content-Type": "application/json" },
 });
 
 api.interceptors.request.use((config) => {
