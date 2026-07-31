@@ -29,11 +29,14 @@ class Settings(BaseSettings):
 
     # --- CORS ---
     CORS_ORIGINS: List[str] = [
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ]
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+
+    "https://ai-customer-support-auto-responder.vercel.app",
+    "https://ai-customer-support-auto-responder-git-main-singhmadhusudan2003-wq.vercel.app",
+]
 
     # --- AI / Models ---
     MODELS_DIR: str = str(BASE_DIR / "models" / "saved")
